@@ -35,3 +35,60 @@ Visit in browser or Postman:  https://hello-world-backend.onrender.com/api/v1/he
 
 ✅ You should see:
 Hello World from Render!
+
+--------------------------------------------------------------------------------------
+🗄️ Database Design (Sample)
+Tables
+users
+| id | name | email | role (USER/ADMIN) | password |
+
+complaints
+| id | title | description | category | latitude | longitude | photo_url | status | created_at | updated_at | user_id (FK) |
+
+comments (optional)
+| id | complaint_id | admin_id | message | timestamp |
+
+notifications
+| id | user_id | complaint_id | message | read_status | timestamp |
+
+-------------------------------------------------------------------------------------
+🧠 Implementation Flow
+
+User submits complaint
+→ stored in DB as Pending
+→ admin notified.
+
+Admin reviews & updates status
+→ triggers email/push to user.
+
+User or public can view progress
+→ public dashboard shows resolved ones.
+
+Chatbot answers user queries via complaint ID or issue keyword.
+--------------------------------------------------------------------------
+🚀 Phase-wise Development Plan
+Phase	Features
+Phase 1	User login/register + complaint submission + admin view
+Phase 2	Status tracking + file upload + Google Maps integration
+Phase 3	Notifications + chatbot + analytics dashboard
+Phase 4	UI polish + deployment (Render + Netlify)
+
+----------------------------------------------------------------
+
+🧩 Example Use Case
+A citizen spots a pothole → snaps a photo → submits → Admin marks “In Progress” → worker repairs → Admin uploads “after” photo → status “Resolved” → citizen gets notified → public dashboard updates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
