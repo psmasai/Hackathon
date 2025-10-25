@@ -158,7 +158,19 @@ Deployment	Render (backend), Netlify (frontend)
 
 *******************************************************************************************
 
-
+Bottom Line / Action Plan
+MVP Focus (Hackathon Priority):
+Backend: Users (register/login + JWT), Complaints (CRUD + status update)
+Frontend: Login/Register + Complaint form + complaint list (user + admin)
+Basic security: JWT + role-based backend checks
+Image upload: local storage
+Deployment: Render (backend) + Netlify (frontend)
+Optional / Bonus (Post-MVP):
+Google Maps / Public dashboard
+Email notifications
+Chatbot integration
+Cloud image storage
+Dashboard charts
 
 
 
